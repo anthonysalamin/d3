@@ -70,10 +70,6 @@
   text-align: center;
 }
 
-.punchline.bignumbers {
-  margin-bottom: 16px;
-}
-
 .text-span {
   background-image: -webkit-gradient(linear, left top, right top, from(#b8f081), to(#64f9c8));
   background-image: linear-gradient(90deg, #b8f081, #64f9c8);
@@ -480,10 +476,10 @@
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -835,6 +831,10 @@
 @media screen and (max-width: 767px) {
   .section.header {
     z-index: 999;
+  }
+
+  .section.highlight {
+    padding-top: 40px;
   }
 
   .container {

@@ -387,6 +387,10 @@ collections:
             label: Text
             name: '-37266504'
             widget: text
+          - hint: 'Original text: We never collect user data. , key: 61895c95'
+            label: Text
+            name: 61895c95
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -439,6 +443,19 @@ collections:
                 required: false
           - label: Image
             name: 30d6d84d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: e51d1be
             widget: object
             fields:
               - name: url

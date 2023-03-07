@@ -303,9 +303,9 @@ collections:
             label: Text
             name: 3a69bd0
             widget: string
-          - hint: 'Original text: web3, key: 379f5f'
+          - hint: 'Original text: Web3, key: 29137f'
             label: Text
-            name: 379f5f
+            name: 29137f
             widget: string
           - hint: 'Original text:  solutions, key: 4dea85fa'
             label: Text
@@ -346,10 +346,6 @@ collections:
               flow your community will love., key: 47340c4c
             label: Text
             name: 47340c4c
-            widget: string
-          - hint: 'Original text: Web3, key: 29137f'
-            label: Text
-            name: 29137f
             widget: string
           - hint: 'Original text: Development, key: 5603451b'
             label: Text

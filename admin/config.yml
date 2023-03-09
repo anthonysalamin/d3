@@ -363,10 +363,6 @@ collections:
             label: Text
             name: '-2b76a7ab'
             widget: string
-          - hint: 'Original text: Talk to us, key: -7d8e69f1'
-            label: Text
-            name: '-7d8e69f1'
-            widget: string
           - hint: 'Original text: $57M+, key: 2143dc4'
             label: Text
             name: 2143dc4
@@ -521,6 +517,10 @@ collections:
             label: Text
             name: '-489b3dc6'
             widget: string
+          - hint: 'Original text: Talk to us, key: -7d8e69f1'
+            label: Text
+            name: '-7d8e69f1'
+            widget: string
           - hint: 'Original text: Shaped with ❤️ by D3, key: -54a802a0'
             label: Text
             name: '-54a802a0'
@@ -653,10 +653,6 @@ collections:
             label: Text
             name: '-697be218'
             widget: string
-          - hint: 'Original text: Expertise, key: 7f8f21f1'
-            label: Text
-            name: 7f8f21f1
-            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -681,13 +677,13 @@ collections:
             label: Link
             name: 6c80469d
             widget: string
-          - hint: 'Original link: mailto:team@d3vs.xyz?subject=Contact, key: 74769ba2'
-            label: Link
-            name: 74769ba2
-            widget: string
           - hint: 'Original link: #highlights, key: 70907aa2'
             label: Link
             name: 70907aa2
+            widget: string
+          - hint: 'Original link: mailto:team@d3vs.xyz?subject=Contact, key: 74769ba2'
+            label: Link
+            name: 74769ba2
             widget: string
           - hint: 'Original link: https://twitter.com/D3VSfirm, key: -2bfa6a9e'
             label: Link

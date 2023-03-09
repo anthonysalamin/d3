@@ -367,10 +367,6 @@ collections:
             label: Text
             name: '-7d8e69f1'
             widget: string
-          - hint: 'Original text: Our expertise, key: -23da9e3'
-            label: Text
-            name: '-23da9e3'
-            widget: string
           - hint: 'Original text: $57M+, key: 2143dc4'
             label: Text
             name: 2143dc4

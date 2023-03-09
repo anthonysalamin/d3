@@ -1179,11 +1179,12 @@
 
 .clue {
   margin-right: 4px;
-  padding: 3px 12px;
+  padding: 3px 10px;
   border-radius: 4px;
-  background-color: #131b24;
+  background-color: rgba(100, 249, 200, 0.01);
   color: #64f9c8;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 

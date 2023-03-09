@@ -375,11 +375,9 @@ collections:
             label: Text
             name: 2143dc4
             widget: string
-          - hint: >-
-              Original text: combined TVL from projects at peak 🔥, key:
-              -27f8d503
+          - hint: 'Original text: combined TVL from projects at ATH 🔥, key: 876fbff'
             label: Text
-            name: '-27f8d503'
+            name: 876fbff
             widget: string
           - hint: 'Original text: 30+, key: c56e'
             label: Text
@@ -431,16 +429,12 @@ collections:
             label: Text
             name: b26e
             widget: string
-          - hint: 'Original text: D3, key: 86f'
-            label: Text
-            name: 86f
-            widget: string
           - hint: >-
-              Original text:  is your partner in creating excellent and
+              Original text: D3 is your partner in creating well crafted and
               user-friendly decentralized applications (dApps) providing
-              seamless and engaging experiences to your users., key: -7e4b9e24
+              seamless and engaging experiences to your users., key: 7fa920da
             label: Text
-            name: '-7e4b9e24'
+            name: 7fa920da
             widget: text
           - hint: 'Original text: Development, key: 5603451b'
             label: Text
@@ -454,16 +448,12 @@ collections:
             label: Text
             name: 4b2e95f
             widget: string
-          - hint: 'Original text: D3 , key: 10591'
-            label: Text
-            name: '10591'
-            widget: string
           - hint: >-
-              Original text: helps you create dApps that leverage blockchain
-              technology and advanced web3 tools to enable secure, trustless,
-              and transparent transactions between users., key: -4c611566
+              Original text: D3 helps you create dApps that leverage blockchain
+              technology and advanced Web3 tools to enable secure, trustless,
+              and transparent transactions between your users., key: -67c5bd90
             label: Text
-            name: '-4c611566'
+            name: '-67c5bd90'
             widget: text
           - hint: 'Original text: DeFi, key: 206d44'
             label: Text
@@ -477,17 +467,17 @@ collections:
             label: Text
             name: '-4d3bef81'
             widget: string
-          - hint: 'Original text: Smartcontracts, key: -657245e8'
+          - hint: 'Original text: Smart Contracts, key: 7b01bbca'
             label: Text
-            name: '-657245e8'
+            name: 7b01bbca
             widget: string
           - hint: >-
-              Original text:  leverages its expertise in blockchain technology,
-              smart contracts, decentralized applications (dApps), and other
-              web3 tools to help you identify and capitalize on opportunities in
-              the DeFi space., key: -279be63
+              Original text: D3 leverages its expertise in blockchain
+              technology, smart contracts, dApps, and other Web3 tools to help
+              you identify and capitalize on opportunities in the DeFi space.,
+              key: 153c0fc2
             label: Text
-            name: '-279be63'
+            name: 153c0fc2
             widget: text
           - hint: 'Original text: Server, key: -6c98e49d'
             label: Text
@@ -505,17 +495,13 @@ collections:
             label: Text
             name: '226434'
             widget: string
-          - hint: 'Original text: By investing in , key: 21258cdf'
-            label: Text
-            name: 21258cdf
-            widget: string
           - hint: >-
-              Original text:  expert server management services, you can focus
-              on developing innovative solutions without worrying about the
-              technical complexities of managing server infrastructure., key:
-              -2f385f8f
+              Original text: By investing in D3 expert server management
+              services, you can focus on developing innovative solutions without
+              worrying about the technical complexities of managing server
+              infrastructure., key: -5ff7c15d
             label: Text
-            name: '-2f385f8f'
+            name: '-5ff7c15d'
             widget: text
           - hint: >-
               Original text: If you have a specific inquiry, please do not
@@ -568,6 +554,10 @@ collections:
             label: Text
             name: 1789239f
             widget: text
+          - hint: 'Original text: D3, key: 86f'
+            label: Text
+            name: 86f
+            widget: string
           - hint: >-
               Original text:  helps you build decentralized applications (dApps)
               that utilize blockchain technology, enabling greater user control

@@ -363,6 +363,14 @@ collections:
             label: Text
             name: '-2b76a7ab'
             widget: string
+          - hint: 'Original text: Our services, key: fcf0ad2'
+            label: Text
+            name: fcf0ad2
+            widget: string
+          - hint: 'Original text: Get in touch, key: -5230a9d2'
+            label: Text
+            name: '-5230a9d2'
+            widget: string
           - hint: 'Original text: $57M+, key: 2143dc4'
             label: Text
             name: 2143dc4
@@ -387,15 +395,11 @@ collections:
             label: Text
             name: 2f57398d
             widget: string
-          - hint: 'Original text: Our services, key: fcf0ad2'
-            label: Text
-            name: fcf0ad2
-            widget: string
           - hint: >-
-              Original text: Leveraging state-of-the-art technology to
-              revolutionize digital spaces., key: 18759d4e
+              Original text: Leveraging state-of-the-art technologies to
+              revolutionize digital spaces., key: -198bb750
             label: Text
-            name: 18759d4e
+            name: '-198bb750'
             widget: string
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
@@ -417,9 +421,9 @@ collections:
             label: Text
             name: '-74937b8b'
             widget: string
-          - hint: 'Original text: ..., key: b26e'
+          - hint: 'Original text: XD, key: aec'
             label: Text
-            name: b26e
+            name: aec
             widget: string
           - hint: >-
               Original text: D3 is your partner in creating well crafted and
@@ -439,6 +443,10 @@ collections:
           - hint: 'Original text: React, key: 4b2e95f'
             label: Text
             name: 4b2e95f
+            widget: string
+          - hint: 'Original text: GraphQL, key: 73ee47c9'
+            label: Text
+            name: 73ee47c9
             widget: string
           - hint: >-
               Original text: D3 helps you create dApps that leverage blockchain
@@ -517,9 +525,9 @@ collections:
             label: Text
             name: '-489b3dc6'
             widget: string
-          - hint: 'Original text: Talk to us, key: -7d8e69f1'
+          - hint: 'Original text: Let''s talk, key: -13e0cf3b'
             label: Text
-            name: '-7d8e69f1'
+            name: '-13e0cf3b'
             widget: string
           - hint: 'Original text: Shaped with ❤️ by D3, key: -54a802a0'
             label: Text
@@ -652,6 +660,10 @@ collections:
           - hint: 'Original text: Clients, key: -697be218'
             label: Text
             name: '-697be218'
+            widget: string
+          - hint: 'Original text: Talk to us, key: -7d8e69f1'
+            label: Text
+            name: '-7d8e69f1'
             widget: string
       - label: Links
         name: links

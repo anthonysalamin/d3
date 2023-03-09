@@ -387,9 +387,9 @@ collections:
             label: Text
             name: '-2620deda'
             widget: string
-          - hint: 'Original text: 5+, key: 696'
+          - hint: 'Original text: 10+, key: bdec'
             label: Text
-            name: '696'
+            name: bdec
             widget: string
           - hint: 'Original text: experts team members, key: 2f57398d'
             label: Text

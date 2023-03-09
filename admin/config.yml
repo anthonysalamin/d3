@@ -371,9 +371,31 @@ collections:
             label: Text
             name: '-23da9e3'
             widget: string
-          - hint: 'Original text: No items found., key: 3d503d2b'
+          - hint: 'Original text: $57M+, key: 2143dc4'
             label: Text
-            name: 3d503d2b
+            name: 2143dc4
+            widget: string
+          - hint: >-
+              Original text: combined TVL from projects at peak 🔥, key:
+              -27f8d503
+            label: Text
+            name: '-27f8d503'
+            widget: string
+          - hint: 'Original text: 30+, key: c56e'
+            label: Text
+            name: c56e
+            widget: string
+          - hint: 'Original text: years of combined experience, key: -2620deda'
+            label: Text
+            name: '-2620deda'
+            widget: string
+          - hint: 'Original text: 5+, key: 696'
+            label: Text
+            name: '696'
+            widget: string
+          - hint: 'Original text: experts team members, key: 2f57398d'
+            label: Text
+            name: 2f57398d
             widget: string
           - hint: 'Original text: Our services, key: fcf0ad2'
             label: Text
@@ -384,6 +406,10 @@ collections:
               revolutionize digital spaces., key: 18759d4e
             label: Text
             name: 18759d4e
+            widget: string
+          - hint: 'Original text: No items found., key: 3d503d2b'
+            label: Text
+            name: 3d503d2b
             widget: string
           - hint: 'Original text: UX/UI, key: 4d68980'
             label: Text

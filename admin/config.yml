@@ -653,6 +653,10 @@ collections:
             label: Text
             name: '-697be218'
             widget: string
+          - hint: 'Original text: Expertise, key: 7f8f21f1'
+            label: Text
+            name: 7f8f21f1
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json

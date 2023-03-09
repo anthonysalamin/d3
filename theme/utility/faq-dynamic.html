@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-wf-page="640866954d8daee2decad9c0" data-wf-site="6406fab1154efb5bb7acea7b" lang="en"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
+<html data-wf-page="6409c2c2bee24b5cdaf7b631" data-wf-site="6406fab1154efb5bb7acea7b" lang="en"><head><link rel="preconnect" crossorigin="true" href="https://assets.website-files.com">{%- seo seo -%}
   <meta charset="utf-8">
   
   
@@ -146,20 +146,20 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
             aspect-ratio: 16 / 9;
         }</style></head>
 <body class="body">
-  <div id="services" class="section wf-section">
+  <div id="faqs" class="section wf-section">
     <div class="container">
-      <div class="div-block-8">
+      <div class="flex-vertical-start-start">
         <div class="wrap-heading">
           <h1 class="heading">{{ texts.20d03d }}<br></h1>
-          <p class="subline">{{ texts.488017eb }}</p>
+          <p class="subline">{{ texts.-20646fff }}</p>
         </div>
         <div class="faq__wrap-flex-horizontal faq__wrap-flex-horizontal--margin-bottom">
-          <div class="faq__collection-list-wrapper">
-            <div class="faq__collection-list">
-              <div class="faq__collection-item">
+          {%- assign collection = collections.faq | sort: "-created-on" -%}<div class="faq__collection-list-wrapper w-dyn-list">
+            {%- unless collection.length == 0 -%}<div role="list" class="faq__collection-list w-dyn-items">
+              {%- for item in collection -%}<div role="listitem" class="faq__collection-item w-dyn-item">
                 <div class="faq__accordion-item-wrap">
                   <div class="faq__accordion-item-trigger">
-                    <h4 class="faq__accrodion-heading">{{ texts.-21d442af }}</h4>
+                    <div class="faq__accrodion-heading">{{ item.data.title }}</div>
                     <div class="faq__accordion-wrap-arrow">
                       <div class="w-embed">
                         <!--  arrow down  -->
@@ -183,76 +183,14 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
                     </div>
                   </div>
                   <div class="faq__accordion-item-content">
-                    <p class="paragraph-2 width-faq">{{ texts.63dfef7e }}</p>
+                    <div class="paragraph width-faq w-richtext">{{ item.templateContent | markdown | markdown }}</div>
                   </div>
                 </div>
-              </div>
-              <div class="faq__collection-item">
-                <div class="faq__accordion-item-wrap">
-                  <div class="faq__accordion-item-trigger">
-                    <h4 class="faq__accrodion-heading">{{ texts.6f23fe71 }}</h4>
-                    <div class="faq__accordion-wrap-arrow">
-                      <div class="w-embed">
-                        <!--  arrow down  -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11.692" height="7.26" viewBox="0 0 11.692 7.26">
-                          <def>
-                            <style type="text/css">
-      .icon-arrow-faq {
-        fill: none;
-        stroke: var(--accent);
-        stroke-width: 2;
-        stroke-linecap: round;
-      }
-    </style>
-                          </def>
-                          <g transform="translate(1.414 1.414)">
-                            <line class="icon-arrow-faq" y2="6.267" transform="rotate(-45)"></line>
-                            <line class="icon-arrow-faq" y2="6.267" transform="translate(8.863 0) rotate(45)"></line>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq__accordion-item-content">
-                    <p class="paragraph-2 width-faq">{{ texts.-4b41c663 }}</p>
-                  </div>
-                </div>
-              </div>
-              <div class="faq__collection-item">
-                <div class="faq__accordion-item-wrap">
-                  <div class="faq__accordion-item-trigger">
-                    <h4 class="faq__accrodion-heading">{{ texts.-61d5e55 }}</h4>
-                    <div class="faq__accordion-wrap-arrow">
-                      <div class="w-embed">
-                        <!--  arrow down  -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11.692" height="7.26" viewBox="0 0 11.692 7.26">
-                          <def>
-                            <style type="text/css">
-      .icon-arrow-faq {
-        fill: none;
-         stroke: var(--accent);
-        stroke-width: 2;
-        stroke-linecap: round;
-      }
-    </style>
-                          </def>
-                          <g transform="translate(1.414 1.414)">
-                            <line class="icon-arrow-faq" y2="6.267" transform="rotate(-45)"></line>
-                            <line class="icon-arrow-faq" y2="6.267" transform="translate(8.863 0) rotate(45)"></line>
-                          </g>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="faq__accordion-item-content">
-                    <p class="paragraph-2 width-faq">{{ texts.13562bbf }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="error__state-wrap hide">
-              <div class="error__state-text">{{ texts.3901bee5 }}</div>
-            </div>
+              </div>{%- endfor -%}
+            </div>{%- endunless -%}
+            {%- if collection.length == 0 -%}<div class="error__state-wrap w-dyn-empty">
+              <div class="error__state-text">{{ texts.3d503d2b }}</div>
+            </div>{%- endif -%}
           </div>
         </div>
       </div>
@@ -274,8 +212,8 @@ function handleHamburgerClick() {
     hamburgerSVG = document.querySelector("#hamburgerSvg"),
     closeArea = document.querySelector("#close-area"),
     mobileNavWrapper = document.querySelector(".wrapper-menu-mobile"),
-    mobileLinkContact = document.querySelector("#mobile-link-contact"),
-    triggers = [hamburgerSVG, closeArea, mobileLinkContact];
+    mobileLinkAnchors = document.querySelectorAll(`[data-mobileanchor]`),
+    triggers = [hamburgerSVG, closeArea, ...mobileLinkAnchors];
   // clause guard
   if (!hamburgerWrapper) return;
   // helper get x axis of 3d transform css property
@@ -314,7 +252,7 @@ function handleHamburgerClick() {
   // const myTimeout = setTimeout(myGreeting, 5000);
   Array.from(triggers).forEach((trigger) => {
     trigger.addEventListener("click", () => {
-      if (trigger == mobileLinkContact) {
+      if (trigger.dataset.mobileanchor) {
         setTimeout(triggerAnimations, 500);
       } else {
         triggerAnimations();

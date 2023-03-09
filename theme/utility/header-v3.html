@@ -280,8 +280,8 @@ function handleHamburgerClick() {
     hamburgerSVG = document.querySelector("#hamburgerSvg"),
     closeArea = document.querySelector("#close-area"),
     mobileNavWrapper = document.querySelector(".wrapper-menu-mobile"),
-    mobileLinkContact = document.querySelector("#mobile-link-contact"),
-    triggers = [hamburgerSVG, closeArea, mobileLinkContact];
+    mobileLinkAnchors = document.querySelectorAll(`[data-mobileanchor]`),
+    triggers = [hamburgerSVG, closeArea, ...mobileLinkAnchors];
   // clause guard
   if (!hamburgerWrapper) return;
   // helper get x axis of 3d transform css property
@@ -320,7 +320,7 @@ function handleHamburgerClick() {
   // const myTimeout = setTimeout(myGreeting, 5000);
   Array.from(triggers).forEach((trigger) => {
     trigger.addEventListener("click", () => {
-      if (trigger == mobileLinkContact) {
+      if (trigger.dataset.mobileanchor) {
         setTimeout(triggerAnimations, 500);
       } else {
         triggerAnimations();

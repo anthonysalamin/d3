@@ -80,6 +80,55 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: faq
+    label: FAQs
+    folder: cms/faq
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: answer
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_order
+        label: order
+        widget: number
+        required: true
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: faq
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[faq].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
   - name: featured_icons
     label: Featured icons
     folder: cms/featured-icons
@@ -282,21 +331,17 @@ collections:
             name: title
             widget: hidden
             default: Texts
-          - hint: 'Original text: Projects, key: -37ac8366'
+          - hint: 'Original text: Services, key: 560f747e'
             label: Text
-            name: '-37ac8366'
+            name: 560f747e
             widget: string
-          - hint: 'Original text: Clients, key: -697be218'
+          - hint: 'Original text: FAQ, key: 10ef6'
             label: Text
-            name: '-697be218'
+            name: 10ef6
             widget: string
           - hint: 'Original text: Contact, key: -64104400'
             label: Text
             name: '-64104400'
-            widget: string
-          - hint: 'Original text: Privacy Policy, key: -3fbde6f6'
-            label: Text
-            name: '-3fbde6f6'
             widget: string
           - hint: >-
               Original text: Empowering businesses with cutting edge , key:
@@ -322,9 +367,9 @@ collections:
             label: Text
             name: '-7d8e69f1'
             widget: string
-          - hint: 'Original text: Services, key: 560f747e'
+          - hint: 'Original text: Our expertise, key: -23da9e3'
             label: Text
-            name: 560f747e
+            name: '-23da9e3'
             widget: string
           - hint: 'Original text: No items found., key: 3d503d2b'
             label: Text
@@ -360,21 +405,17 @@ collections:
             label: Text
             name: b26e
             widget: string
-          - hint: >-
-              Original text: UX/UI design plays a critical role in creating
-              user-friendly decentralized applications (dApps) that offer
-              seamless and engaging experiences to your users, , key: -15a997d4
-            label: Text
-            name: '-15a997d4'
-            widget: text
           - hint: 'Original text: D3, key: 86f'
             label: Text
             name: 86f
             widget: string
-          - hint: 'Original text:  is your partner., key: -160adaa3'
+          - hint: >-
+              Original text:  is your partner in creating excellent and
+              user-friendly decentralized applications (dApps) providing
+              seamless and engaging experiences to your users., key: -7e4b9e24
             label: Text
-            name: '-160adaa3'
-            widget: string
+            name: '-7e4b9e24'
+            widget: text
           - hint: 'Original text: Development, key: 5603451b'
             label: Text
             name: 5603451b
@@ -392,12 +433,11 @@ collections:
             name: '10591'
             widget: string
           - hint: >-
-              Original text: helps you create decentralized applications (dApps)
-              that leverage blockchain technology and other web3 tools to enable
-              secure, trustless, and transparent transactions between users.,
-              key: -1d10a58e
+              Original text: helps you create dApps that leverage blockchain
+              technology and advanced web3 tools to enable secure, trustless,
+              and transparent transactions between users., key: -4c611566
             label: Text
-            name: '-1d10a58e'
+            name: '-4c611566'
             widget: text
           - hint: 'Original text: DeFi, key: 206d44'
             label: Text
@@ -451,15 +491,43 @@ collections:
             label: Text
             name: '-2f385f8f'
             widget: text
-          - hint: 'Original text: FAQs, key: 20d03d'
-            label: Text
-            name: 20d03d
-            widget: string
           - hint: >-
               Original text: If you have a specific inquiry, please do not
               hesitate to contact our team of experts., key: -20646fff
             label: Text
             name: '-20646fff'
+            widget: string
+          - hint: 'Original text: let''s build the, key: 5cd21f66'
+            label: Text
+            name: 5cd21f66
+            widget: string
+          - hint: 'Original text: next big thing,, key: 27b4eb6b'
+            label: Text
+            name: 27b4eb6b
+            widget: string
+          - hint: 'Original text: ‍, key: 200d'
+            label: Text
+            name: 200d
+            widget: string
+          - hint: 'Original text: together, key: -489b3dc6'
+            label: Text
+            name: '-489b3dc6'
+            widget: string
+          - hint: 'Original text: Shaped with ❤️ by D3, key: -54a802a0'
+            label: Text
+            name: '-54a802a0'
+            widget: string
+          - hint: 'Original text: Privacy Policy, key: -3fbde6f6'
+            label: Text
+            name: '-3fbde6f6'
+            widget: string
+          - hint: 'Original text: We never collect user data. , key: 61895c95'
+            label: Text
+            name: 61895c95
+            widget: string
+          - hint: 'Original text: FAQs, key: 20d03d'
+            label: Text
+            name: 20d03d
             widget: string
           - hint: >-
               Original text: Why switching to a Web3 infrastrucure ?, key:
@@ -474,10 +542,6 @@ collections:
             label: Text
             name: 1789239f
             widget: text
-          - hint: 'Original text: ‍, key: 200d'
-            label: Text
-            name: 200d
-            widget: string
           - hint: >-
               Original text:  helps you build decentralized applications (dApps)
               that utilize blockchain technology, enabling greater user control
@@ -528,26 +592,6 @@ collections:
             label: Text
             name: 3901bee5
             widget: string
-          - hint: 'Original text: let''s build the, key: 5cd21f66'
-            label: Text
-            name: 5cd21f66
-            widget: string
-          - hint: 'Original text: next big thing,, key: 27b4eb6b'
-            label: Text
-            name: 27b4eb6b
-            widget: string
-          - hint: 'Original text: together, key: -489b3dc6'
-            label: Text
-            name: '-489b3dc6'
-            widget: string
-          - hint: 'Original text: Shaped with ❤️ by D3, key: -54a802a0'
-            label: Text
-            name: '-54a802a0'
-            widget: string
-          - hint: 'Original text: We never collect user data. , key: 61895c95'
-            label: Text
-            name: 61895c95
-            widget: string
           - hint: >-
               Original text: Have a specific question ? Get in touch with our
               team of experts., key: 488017eb
@@ -589,6 +633,14 @@ collections:
             label: Text
             name: 2611342f
             widget: string
+          - hint: 'Original text: Projects, key: -37ac8366'
+            label: Text
+            name: '-37ac8366'
+            widget: string
+          - hint: 'Original text: Clients, key: -697be218'
+            label: Text
+            name: '-697be218'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -601,21 +653,21 @@ collections:
             label: Link
             name: '23'
             widget: string
+          - hint: 'Original link: #services, key: -686fc27f'
+            label: Link
+            name: '-686fc27f'
+            widget: string
+          - hint: 'Original link: #faq, key: 117413'
+            label: Link
+            name: '117413'
+            widget: string
           - hint: 'Original link: #contact, key: 6c80469d'
             label: Link
             name: 6c80469d
             widget: string
-          - hint: 'Original link: /soon, key: 2cc45ea'
-            label: Link
-            name: 2cc45ea
-            widget: string
           - hint: 'Original link: mailto:team@d3vs.xyz?subject=Contact, key: 74769ba2'
             label: Link
             name: 74769ba2
-            widget: string
-          - hint: 'Original link: #services, key: -686fc27f'
-            label: Link
-            name: '-686fc27f'
             widget: string
           - hint: 'Original link: #highlights, key: 70907aa2'
             label: Link
@@ -628,6 +680,10 @@ collections:
           - hint: 'Original link: /, key: 2f'
             label: Link
             name: 2f
+            widget: string
+          - hint: 'Original link: /soon, key: 2cc45ea'
+            label: Link
+            name: 2cc45ea
             widget: string
       - label: Images
         name: images

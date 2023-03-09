@@ -575,7 +575,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.div-block-8 {
+.flex-vertical-start-start {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1605,14 +1605,6 @@
   .footer-link-icon {
     margin-right: 16px;
     margin-left: 16px;
-  }
-
-  .footer-link-icon.first {
-    margin-left: 0px;
-  }
-
-  .footer-link-icon.last {
-    margin-right: 0px;
   }
 
   .footer__wrap {

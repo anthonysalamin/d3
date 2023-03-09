@@ -1,8 +1,8 @@
 ---
-title: FAQs
+title: FAQ static
 permalink: utility/{{ page.fileSlug }}/index.html
-layout: utility/faqs.html
-slug: faqs
+layout: utility/faq-static.html
+slug: faq-static
 tags: pages
 seo:
   noindex: false

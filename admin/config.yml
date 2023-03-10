@@ -343,6 +343,10 @@ collections:
             label: Text
             name: '-64104400'
             widget: string
+          - hint: 'Original text: Twitter, key: 2c9a4253'
+            label: Text
+            name: 2c9a4253
+            widget: string
           - hint: >-
               Original text: Empowering businesses with cutting edge , key:
               3a69bd0
@@ -529,9 +533,11 @@ collections:
             label: Text
             name: '-13e0cf3b'
             widget: string
-          - hint: 'Original text: Shaped with ❤️ by D3, key: -54a802a0'
+          - hint: >-
+              Original text: Shaped with ❤️ by D3 | team@d3vs.xyz, key:
+              -453a0cea
             label: Text
-            name: '-54a802a0'
+            name: '-453a0cea'
             widget: string
           - hint: 'Original text: Privacy Policy, key: -3fbde6f6'
             label: Text
@@ -685,6 +691,10 @@ collections:
             label: Link
             name: '117413'
             widget: string
+          - hint: 'Original link: https://twitter.com/D3VSfirm, key: -2bfa6a9e'
+            label: Link
+            name: '-2bfa6a9e'
+            widget: string
           - hint: 'Original link: #contact, key: 6c80469d'
             label: Link
             name: 6c80469d
@@ -696,10 +706,6 @@ collections:
           - hint: 'Original link: mailto:team@d3vs.xyz?subject=Contact, key: 74769ba2'
             label: Link
             name: 74769ba2
-            widget: string
-          - hint: 'Original link: https://twitter.com/D3VSfirm, key: -2bfa6a9e'
-            label: Link
-            name: '-2bfa6a9e'
             widget: string
           - hint: 'Original link: /, key: 2f'
             label: Link
@@ -719,6 +725,19 @@ collections:
             default: Images
           - label: Image
             name: 3db6a09d
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 79f7992f
             widget: object
             fields:
               - name: url

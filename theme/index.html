@@ -305,18 +305,16 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
             {%- assign collection = collections.services | sort: "f_order" -%}<div class="collection-list-wrapper-2 w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="collection-list-2 w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="collection-item-2 w-dyn-item">
-                  <div class="service__item-wrap">
-                    <div class="service__bg" style="background-image: url('{{item.data.f_background.url}}');">
-                      <div class="wrap-padded">
-                        <div class="div-block-11"></div>
-                        <div class="heading service w-richtext">{{ item.templateContent | markdown | markdown }}</div>
-                      </div>
+                  <div class="service__bg" style="background-image: url('{{item.data.f_background.url}}');">
+                    <div class="wrap-padded">
+                      <div class="div-block-11"></div>
+                      <div class="heading service w-richtext">{{ item.templateContent | markdown | markdown }}</div>
                     </div>
                   </div>
                   <div class="wrap-padded service">
                     <p class="subline service">{{ item.data.f_desciption }}</p>
-                    <p class="paragraph service">{{ item.data.f_1st-paragraph }}</p>
-                    <p class="paragraph service">{{ item.data.f_2nd-paragraph }}</p>
+                    <p class="paragraph service a">{{ item.data.f_1st-paragraph }}</p>
+                    <p class="paragraph service b">{{ item.data.f_2nd-paragraph }}</p>
                   </div>
                 </div>{%- endfor -%}
               </div>{%- endunless -%}

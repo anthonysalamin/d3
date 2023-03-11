@@ -80,6 +80,87 @@ collections:
             name: additional_tags
             widget: text
             required: false
+  - name: services
+    label: Services
+    folder: cms/services
+    create: true
+    identifier_field: name
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - hint: ''
+        name: title
+        label: Name
+        widget: string
+        required: true
+      - hint: ''
+        name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - hint: ''
+        name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - label: title
+        name: body
+        widget: markdown
+        required: false
+      - hint: ''
+        name: f_desciption
+        label: Desciption
+        widget: text
+        required: false
+      - hint: ''
+        name: f_1st-paragraph
+        label: 1st Paragraph
+        widget: text
+        required: false
+      - hint: ''
+        name: f_2nd-paragraph
+        label: 2nd paragraph
+        widget: text
+        required: false
+      - hint: ''
+        name: f_background
+        label: background
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
+      - hint: ''
+        name: f_order
+        label: order
+        widget: number
+        required: false
+      - label: Tags
+        widget: hidden
+        name: tags
+        default: services
+      - label: Layout
+        widget: hidden
+        name: layout
+        default: '[services].html'
+      - label: Publish Date
+        name: date
+        widget: datetime
+      - *ref_0
   - name: faq
     label: FAQs
     folder: cms/faq
@@ -409,110 +490,6 @@ collections:
             label: Text
             name: 3d503d2b
             widget: string
-          - hint: 'Original text: UX/UI, key: 4d68980'
-            label: Text
-            name: 4d68980
-            widget: string
-          - hint: 'Original text: Design, key: 79ceadde'
-            label: Text
-            name: 79ceadde
-            widget: string
-          - hint: 'Original text: Figma, key: 40bb878'
-            label: Text
-            name: 40bb878
-            widget: string
-          - hint: 'Original text: Notion, key: -74937b8b'
-            label: Text
-            name: '-74937b8b'
-            widget: string
-          - hint: 'Original text: XD, key: aec'
-            label: Text
-            name: aec
-            widget: string
-          - hint: >-
-              Original text: D3 is your partner in creating well crafted and
-              user-friendly decentralized applications (dApps) providing
-              seamless and engaging experiences to your users., key: 7fa920da
-            label: Text
-            name: 7fa920da
-            widget: text
-          - hint: 'Original text: Development, key: 5603451b'
-            label: Text
-            name: 5603451b
-            widget: string
-          - hint: 'Original text: Typescript, key: 57b068a5'
-            label: Text
-            name: 57b068a5
-            widget: string
-          - hint: 'Original text: React, key: 4b2e95f'
-            label: Text
-            name: 4b2e95f
-            widget: string
-          - hint: 'Original text: GraphQL, key: 73ee47c9'
-            label: Text
-            name: 73ee47c9
-            widget: string
-          - hint: >-
-              Original text: D3 helps you create dApps that leverage blockchain
-              technology and advanced Web3 tools to enable secure, trustless,
-              and transparent transactions between your users., key: -67c5bd90
-            label: Text
-            name: '-67c5bd90'
-            widget: text
-          - hint: 'Original text: DeFi, key: 206d44'
-            label: Text
-            name: 206d44
-            widget: string
-          - hint: 'Original text: Consulting, key: 6ce1e096'
-            label: Text
-            name: 6ce1e096
-            widget: string
-          - hint: 'Original text: Blockchains, key: -4d3bef81'
-            label: Text
-            name: '-4d3bef81'
-            widget: string
-          - hint: 'Original text: Smart Contracts, key: 7b01bbca'
-            label: Text
-            name: 7b01bbca
-            widget: string
-          - hint: >-
-              Original text: D3 leverages its expertise in blockchain
-              technology, smart contracts, dApps, and other Web3 tools to help
-              you identify and capitalize on opportunities in the DeFi space.,
-              key: 153c0fc2
-            label: Text
-            name: 153c0fc2
-            widget: text
-          - hint: 'Original text: Server, key: -6c98e49d'
-            label: Text
-            name: '-6c98e49d'
-            widget: string
-          - hint: 'Original text: Managment, key: 5b39783e'
-            label: Text
-            name: 5b39783e
-            widget: string
-          - hint: 'Original text: AWS, key: fedd'
-            label: Text
-            name: fedd
-            widget: string
-          - hint: 'Original text: IPFS, key: 226434'
-            label: Text
-            name: '226434'
-            widget: string
-          - hint: >-
-              Original text: By investing in D3 expert server management
-              services, you can focus on developing innovative solutions without
-              worrying about the technical complexities of managing server
-              infrastructure., key: -5ff7c15d
-            label: Text
-            name: '-5ff7c15d'
-            widget: text
-          - hint: >-
-              Original text: If you have a specific inquiry, please do not
-              hesitate to contact our team of experts., key: -20646fff
-            label: Text
-            name: '-20646fff'
-            widget: string
           - hint: 'Original text: let''s build the, key: 5cd21f66'
             label: Text
             name: 5cd21f66
@@ -550,6 +527,12 @@ collections:
           - hint: 'Original text: FAQs, key: 20d03d'
             label: Text
             name: 20d03d
+            widget: string
+          - hint: >-
+              Original text: If you have a specific inquiry, please do not
+              hesitate to contact our team of experts., key: -20646fff
+            label: Text
+            name: '-20646fff'
             widget: string
           - hint: >-
               Original text: Why switching to a Web3 infrastrucure ?, key:
@@ -671,6 +654,104 @@ collections:
             label: Text
             name: '-7d8e69f1'
             widget: string
+          - hint: 'Original text: UX/UI, key: 4d68980'
+            label: Text
+            name: 4d68980
+            widget: string
+          - hint: 'Original text: Design, key: 79ceadde'
+            label: Text
+            name: 79ceadde
+            widget: string
+          - hint: 'Original text: Figma, key: 40bb878'
+            label: Text
+            name: 40bb878
+            widget: string
+          - hint: 'Original text: Notion, key: -74937b8b'
+            label: Text
+            name: '-74937b8b'
+            widget: string
+          - hint: 'Original text: XD, key: aec'
+            label: Text
+            name: aec
+            widget: string
+          - hint: >-
+              Original text: D3 is your partner in creating well crafted and
+              user-friendly decentralized applications (dApps) providing
+              seamless and engaging experiences to your users., key: 7fa920da
+            label: Text
+            name: 7fa920da
+            widget: text
+          - hint: 'Original text: Development, key: 5603451b'
+            label: Text
+            name: 5603451b
+            widget: string
+          - hint: 'Original text: Typescript, key: 57b068a5'
+            label: Text
+            name: 57b068a5
+            widget: string
+          - hint: 'Original text: React, key: 4b2e95f'
+            label: Text
+            name: 4b2e95f
+            widget: string
+          - hint: 'Original text: GraphQL, key: 73ee47c9'
+            label: Text
+            name: 73ee47c9
+            widget: string
+          - hint: >-
+              Original text: D3 helps you create dApps that leverage blockchain
+              technology and advanced Web3 tools to enable secure, trustless,
+              and transparent transactions between your users., key: -67c5bd90
+            label: Text
+            name: '-67c5bd90'
+            widget: text
+          - hint: 'Original text: DeFi, key: 206d44'
+            label: Text
+            name: 206d44
+            widget: string
+          - hint: 'Original text: Consulting, key: 6ce1e096'
+            label: Text
+            name: 6ce1e096
+            widget: string
+          - hint: 'Original text: Blockchains, key: -4d3bef81'
+            label: Text
+            name: '-4d3bef81'
+            widget: string
+          - hint: 'Original text: Smart Contracts, key: 7b01bbca'
+            label: Text
+            name: 7b01bbca
+            widget: string
+          - hint: >-
+              Original text: D3 leverages its expertise in blockchain
+              technology, smart contracts, dApps, and other Web3 tools to help
+              you identify and capitalize on opportunities in the DeFi space.,
+              key: 153c0fc2
+            label: Text
+            name: 153c0fc2
+            widget: text
+          - hint: 'Original text: Server, key: -6c98e49d'
+            label: Text
+            name: '-6c98e49d'
+            widget: string
+          - hint: 'Original text: Managment, key: 5b39783e'
+            label: Text
+            name: 5b39783e
+            widget: string
+          - hint: 'Original text: AWS, key: fedd'
+            label: Text
+            name: fedd
+            widget: string
+          - hint: 'Original text: IPFS, key: 226434'
+            label: Text
+            name: '226434'
+            widget: string
+          - hint: >-
+              Original text: By investing in D3 expert server management
+              services, you can focus on developing innovative solutions without
+              worrying about the technical complexities of managing server
+              infrastructure., key: -5ff7c15d
+            label: Text
+            name: '-5ff7c15d'
+            widget: text
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -686,10 +767,6 @@ collections:
           - hint: 'Original link: #services, key: -686fc27f'
             label: Link
             name: '-686fc27f'
-            widget: string
-          - hint: 'Original link: #faq, key: 117413'
-            label: Link
-            name: '117413'
             widget: string
           - hint: 'Original link: https://twitter.com/D3VSfirm, key: -2bfa6a9e'
             label: Link

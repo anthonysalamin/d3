@@ -51,6 +51,7 @@
 
 .container {
   position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -550,7 +551,7 @@
 }
 
 .paragraph.service {
-  max-width: 300px;
+  max-width: 350px;
   margin-bottom: 24px;
   color: #95a3a2;
 }
@@ -595,6 +596,7 @@
 
 .heading.service {
   position: relative;
+  margin-top: -48px;
   margin-bottom: 0px;
   background-color: #ddd;
   background-image: none;
@@ -1158,6 +1160,7 @@
   top: auto;
   right: 0%;
   bottom: 0%;
+  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1336,6 +1339,67 @@
   background-color: rgba(17, 22, 31, 0.25);
 }
 
+.collection-list-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.collection-list-wrapper-3 {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 32px;
+  bottom: 32px;
+  display: block;
+}
+
+.collection-item-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.div-block-12 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: hsla(0, 0%, 86.7%, 0.08);
+}
+
+.image-2 {
+  width: 40px;
+}
+
 @media screen and (max-width: 991px) {
   .section.build {
     margin-bottom: 80px;
@@ -1424,6 +1488,10 @@
 
   .wrap-padded.title {
     margin-bottom: 80px;
+  }
+
+  .image-2 {
+    width: 32px;
   }
 }
 
@@ -1574,6 +1642,10 @@
     line-height: 44px;
   }
 
+  .heading.service {
+    margin-top: -80px;
+  }
+
   .wrap-card {
     width: 100%;
     padding: 8px 0px;
@@ -1653,10 +1725,6 @@
 
   .embed-logomark-copy {
     left: -59%;
-  }
-
-  .service__bg {
-    height: 300px;
   }
 
   .wrap-padded.service {
@@ -1841,6 +1909,10 @@
   .wrap-padded.service {
     padding-right: 5%;
     padding-left: 5%;
+  }
+
+  .image-2 {
+    width: 24px;
   }
 }
 

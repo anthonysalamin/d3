@@ -11,14 +11,30 @@ f_2nd-paragraph: >-
   latest technologies with a philosophy of excellence and on-time delivery.
 title: Smart Contracts Development
 slug: smart-contracts-development
-updated-on: '2023-03-11T20:09:10.088Z'
+updated-on: '2023-03-12T12:31:12.216Z'
 created-on: '2023-03-11T19:53:14.056Z'
-published-on: '2023-03-11T20:22:17.105Z'
+published-on: '2023-03-12T12:31:44.899Z'
 f_background:
   url: >-
-    https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640cdd47d086fd16ecbc1e77_magicpattern-bevXKKL7E9g-unsplash.jpg
+    https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc152ba67524bf2058914_magicpattern-bevXKKL7E9g-unsplash-b.jpg
   alt: null
 f_order: 2
+f_icons:
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc45e890e1ef1113709e2_icon-typescript.svg
+    alt: null
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc45e791fc738d73fde19_icon-react.svg
+    alt: null
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc45f890e1ea8453709e3_icon-graphql.svg
+    alt: null
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc45f3ecaf8a56b4ab2ed_icon-docker.svg
+    alt: null
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc45fbc45fd213b402e04_icon-firebase.svg
+    alt: null
 layout: '[services].html'
 tags: services
 ---

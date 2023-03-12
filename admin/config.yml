@@ -149,6 +149,23 @@ collections:
         label: order
         widget: number
         required: false
+      - hint: ''
+        name: f_icons
+        label: icons
+        widget: list
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -642,18 +659,6 @@ collections:
             label: Text
             name: 2611342f
             widget: string
-          - hint: 'Original text: Projects, key: -37ac8366'
-            label: Text
-            name: '-37ac8366'
-            widget: string
-          - hint: 'Original text: Clients, key: -697be218'
-            label: Text
-            name: '-697be218'
-            widget: string
-          - hint: 'Original text: Talk to us, key: -7d8e69f1'
-            label: Text
-            name: '-7d8e69f1'
-            widget: string
           - hint: 'Original text: UX/UI, key: 4d68980'
             label: Text
             name: 4d68980
@@ -893,19 +898,6 @@ collections:
                 required: false
           - label: Image
             name: e51d1be
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 3db6a09d
             widget: object
             fields:
               - name: url

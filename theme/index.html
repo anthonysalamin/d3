@@ -307,7 +307,21 @@ a:focus,button:focus,input:focus,textarea:focus{outline:0!important}a{-webkit-to
                 {%- for item in collection -%}<div role="listitem" class="collection-item-2 w-dyn-item">
                   <div class="service__bg" style="background-image: url('{{item.data.f_background.url}}');">
                     <div class="wrap-padded">
-                      <div class="div-block-11"></div>
+                      <div class="div-block-11">
+                        {%- assign setItems = item.data.f_icons -%}<div class="collection-list-wrapper-3 w-dyn-list">
+                          {%- unless setItems.length == 0 -%}<div role="list" class="collection-list-3 w-dyn-items">
+                            {%- for setItem in setItems -%}<div role="listitem" class="w-dyn-item">
+                              <div class="div-block-12"><img src="{{ setItem.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;10vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;32px&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;4vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;40px&quot;}]" alt="{{ setItem.alt }}" class="image-2"></div>
+                            </div>{%- endfor -%}
+                          </div>{%- endunless -%}
+                        <template><div class="collection-list-wrapper-3 w-dyn-list">
+                          <div role="list" class="collection-list-3 w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                              <div class="div-block-12"><img src="{# setItem.url #}" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;10vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;32px&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;4vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;40px&quot;}]" alt="{# setItem.alt #}" class="image-2"></div>
+                            </div>
+                          </div>
+                        </div></template></div>
+                      </div>
                       <div class="heading service w-richtext">{{ item.templateContent | markdown | markdown }}</div>
                     </div>
                   </div>

@@ -12,14 +12,24 @@ f_2nd-paragraph: >-
   ready to advise on your launch sequence to maximize opportunities.
 title: DeFi Consulting
 slug: defi-consulting
-updated-on: '2023-03-11T20:09:00.767Z'
+updated-on: '2023-03-12T12:31:19.343Z'
 created-on: '2023-03-11T19:53:45.295Z'
-published-on: '2023-03-11T20:22:17.105Z'
+published-on: '2023-03-12T12:31:44.899Z'
 f_background:
   url: >-
-    https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640cdd51c374bca16fb29d69_nenad-novakovic-mvG5WDANqPw-unsplash.jpg
+    https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc16090971b2ad71158d2_nenad-novakovic-mvG5WDANqPw-unsplash-b.jpg
   alt: null
 f_order: 3
+f_icons:
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc5eabc45fd2f3740483d_icon-uniswap.svg
+    alt: null
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc5eb791fc7284e3ffca4_icon-aave.svg
+    alt: null
+  - url: >-
+      https://uploads-ssl.webflow.com/640744774367b95bec7edecd/640dc5ea3ecaf894954ad896_icon-notion.svg
+    alt: null
 layout: '[services].html'
 tags: services
 ---

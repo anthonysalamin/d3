@@ -433,10 +433,6 @@ collections:
             label: Text
             name: 560f747e
             widget: string
-          - hint: 'Original text: FAQ, key: 10ef6'
-            label: Text
-            name: 10ef6
-            widget: string
           - hint: 'Original text: Contact, key: -64104400'
             label: Text
             name: '-64104400'
@@ -444,6 +440,10 @@ collections:
           - hint: 'Original text: Twitter, key: 2c9a4253'
             label: Text
             name: 2c9a4253
+            widget: string
+          - hint: 'Original text: Linked, key: -78546dc7'
+            label: Text
+            name: '-78546dc7'
             widget: string
           - hint: >-
               Original text: Empowering businesses with cutting edge , key:
@@ -757,6 +757,10 @@ collections:
             label: Text
             name: '-5ff7c15d'
             widget: text
+          - hint: 'Original text: FAQ, key: 10ef6'
+            label: Text
+            name: 10ef6
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -773,9 +777,9 @@ collections:
             label: Link
             name: '-686fc27f'
             widget: string
-          - hint: 'Original link: https://twitter.com/D3VSfirm, key: -2bfa6a9e'
+          - hint: 'Original link: https://twitter.com/D3_firm, key: 51b0fb56'
             label: Link
-            name: '-2bfa6a9e'
+            name: 51b0fb56
             widget: string
           - hint: 'Original link: #contact, key: 6c80469d'
             label: Link
@@ -788,6 +792,10 @@ collections:
           - hint: 'Original link: mailto:team@d3vs.xyz?subject=Contact, key: 74769ba2'
             label: Link
             name: 74769ba2
+            widget: string
+          - hint: 'Original link: https://twitter.com/D3VSfirm, key: -2bfa6a9e'
+            label: Link
+            name: '-2bfa6a9e'
             widget: string
           - hint: 'Original link: /, key: 2f'
             label: Link
